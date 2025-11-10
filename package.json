@@ -12,7 +12,11 @@
     "dev:backend": "npm run dev --workspace=backend",
     "dev:frontend": "npm run dev --workspace=frontend",
     "build": "npm run build --workspaces",
-    "install:all": "npm install && npm install --workspaces"
+    "install:all": "npm install && npm install --workspaces",
+    "seed": "npm run seed --workspace=backend",
+    "setup": "bash scripts/quick-setup.sh",
+    "deploy-check": "bash scripts/deploy-check.sh",
+    "generate-secret": "bash scripts/generate-jwt-secret.sh"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

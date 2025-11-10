@@ -340,6 +340,35 @@ Dự án này được phát hành dưới giấy phép MIT.
 - [OpenAI](https://openai.com/) - GPT API
 - Cộng đồng open source
 
+## 🚀 Deploy lên Production
+
+### Quick Deploy Commands
+
+```bash
+# 1. Kiểm tra cấu hình trước khi deploy
+npm run deploy-check
+
+# 2. Tạo JWT secret
+npm run generate-secret
+```
+
+### Deploy Guide
+
+Xem hướng dẫn chi tiết trong **[DEPLOYMENT.md](./DEPLOYMENT.md)**
+
+Tóm tắt:
+1. **Database**: MongoDB Atlas (free tier)
+2. **Backend**: Railway hoặc Render (free tier)
+3. **Frontend**: Vercel (free tier)
+
+Tất cả hoàn toàn MIỄN PHÍ! 🎉
+
+### Vercel Deploy Button
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/englishwithme)
+
+---
+
 ## 📞 Liên Hệ
 
 - Email: support@meuenglish.com
