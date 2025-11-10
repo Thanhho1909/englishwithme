@@ -44,17 +44,29 @@ Hướng dẫn deploy nhanh Meu English lên production trong **15 phút**.
 
 1. Vào [vercel.com](https://vercel.com) → Login with GitHub
 2. Add New Project → Import `englishwithme`
-3. Configure:
-   - Framework: **Vite**
+3. Configure Project Settings:
+   - Framework Preset: **Vite**
    - Root Directory: `frontend`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-4. Environment Variables:
-   ```env
-   VITE_API_URL=https://xxxxx.railway.app/api
+   - Build Command: `npm run build` (để mặc định)
+   - Output Directory: `dist` (để mặc định)
+
+4. **QUAN TRỌNG - Add Environment Variables:**
+
+   Trước khi deploy, click vào "Environment Variables" và thêm:
+
    ```
-   (Thay `xxxxx.railway.app` bằng URL Railway từ bước 2)
-5. Deploy → Copy URL: `https://xxxxx.vercel.app`
+   Name:  VITE_API_URL
+   Value: https://xxxxx.railway.app/api
+   ```
+
+   **Lưu ý:**
+   - Thay `xxxxx.railway.app` bằng URL Railway từ bước 2
+   - Phải có `/api` ở cuối
+   - Ví dụ: `https://meu-english-production.up.railway.app/api`
+
+5. Click "Deploy" → Đợi 2-3 phút
+
+6. Deploy xong → Copy URL: `https://xxxxx.vercel.app`
 
 ✅ Done!
 
